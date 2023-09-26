@@ -81,7 +81,7 @@ int main()
              cout << "Wrong...\n";
              login_and_signin();
          }
-        if(user_in_system.size() == 0 && op == "1")
+        if(user_in_system.size() == 1 && op == "1")
         {
             cout << "There is no users in the system ,please sign up " << '\n';
             login_and_signin();
@@ -560,13 +560,18 @@ int main()
             cout << "So, you don't have questions to answer.\n";
             home_page();
         }
+        cout << "\n========================================\n";
         cout << "enter ID of question you need to answer: \n";
         std::cin >> std::ws; // remove cin.ignor
         string id_question;
         getline(cin , id_question);
         if(!question[id_question].size())
         {
-            cout << "There is no question with this id\n";
+            if(total_questions[id_question].size())
+            {
+                cout << "\nThis question doesn't belonge to you so, you don't have the right to answer it.\n";
+            }
+            else cout << "There is no question with this id\n";
             answer_question();
         }
         if(question[id_question].size() > 1)
