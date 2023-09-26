@@ -1,0 +1,16 @@
+
+8,maher,ahmed,i am ahmed how are you maher?
+Answer(,8, ) i am good
+Answer(,8, ) i am fine
+
+2,ahmed,mohmed,i am mohmed how old are you ahmed?
+Answer(,2, ) i am 20
+
+99,maher,mohmed,i am mohmed how old are you maher?
+Answer(,99, ) i am 21 and i am going to 22
+Answer(,99, ) i am 22 now.
+
+
+
+55,mohmed,maher,i am maher what is your phone number?
+Answer(,55, ) 01205397285
